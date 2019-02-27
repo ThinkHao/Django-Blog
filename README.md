@@ -22,7 +22,7 @@ Python 3.7.2
  
 ## 二、使用虚拟环境 Virtualenv
 
-强烈推荐在 Virtualenv 下进行 Django 的开发。Virtualenv 是一个 Python 工具，使用它可以创建一个独立的 Python 环境。
+Virtualenv 是一个 Python 工具，使用它可以创建一个独立的 Python 环境。
 
 为什么要使用 Virtualenv 呢？举个例子，假设你已经在系统中安装了 Python，并且在阅读此教程前你已经进行过一些 Django 的学习，但那时候安装的 Django 还是 1.8 版本。我们教程使用的是最新版的 Django 1.10.6 版本，你可能不愿意删除掉旧版的 Django 1.8，因为那可能导致你以前的项目无法运行。既想让原本项目在 Django 1.8 环境下运行，又想再安装 Django 1.10.6 来开启本教程的项目，怎么办呢？使用 Virtualenv 就能够完美解决这个问题。
 
@@ -44,11 +44,11 @@ C:\Users\qianqi>D:\qianq\blogproject_env\Scripts\activate
 
 ## 三、安装Django
 
-Django 的官方文档对 如何安装 Django 给出了详细且明确的指导，不过我们目前用不上这些，只需使用 pip 命令就可以解决问题。
+Django 的官方文档对 如何安装 Django 给出了详细且明确的指导，不过目前用不上这些，只需使用 pip 命令就可以解决问题。
 ~~~
 (blogproject_env) C:\Users\qianqi>pip install django==1.10.6
 ~~~
-我们用 django==1.10.6 来安装指定的 Django 版本以保证和教程中的一致。如果直接 pip install django 的话有可能安装最新的 Django 发行版本，而不是 Django 1.10.6。
+用 django==1.10.6 来安装指定的 Django 版本以保证和教程中的一致。如果直接 pip install django 的话有可能安装最新的 Django 发行版本，而不是 Django 1.10.6。
 
 注意命名提示符前的 (blogproject_env) 以确保你始终处在虚拟环境中，如果不小心退出了虚拟环境，先按上面的步骤重新进入再安装 Django。
 
