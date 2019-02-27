@@ -1,5 +1,4 @@
 # Django Blog
------
 开发环境：
 ~~~
 windows 10（64位）
@@ -8,7 +7,9 @@ Django版本 1.10.6
 ~~~
 建议尽可能与开发环境保持一致，避免一些不必要的麻烦。推荐Python版本为3.4或以上，Django版本号必须为1.10.x。
 &nbsp;     
-##一、安装python
+
+一、安装python
+
 Windows 下安装 Python 非常简单，去 Python 官方网站找到 Python 3 的下载地址，根据你的系统选择 32 位或者 64 位的安装包，下载好后双击安装即可。
 
 安装完后检测 Python 是否可以正常运行。在命令行输入 python -v ，如果输出了 Python 的版本号，说明 Python 已安装成功。
@@ -17,8 +18,10 @@ C:\Users\qianqi>python -V
 Python 3.7.2
 ~~~
 如果提示命令未找到，而你又确定已经安装了 Python，多半是因为没有把 Python 添加到环境变量。可搜索如何把 Python 添加到环境变量的相关教程，将安装的Python 添加到环境变量即可。
-&nbsp;  
-##二、使用虚拟环境 Virtualenv
+
+ 
+二、使用虚拟环境 Virtualenv
+
 强烈推荐在 Virtualenv 下进行 Django 的开发。Virtualenv 是一个 Python 工具，使用它可以创建一个独立的 Python 环境。
 
 为什么要使用 Virtualenv 呢？举个例子，假设你已经在系统中安装了 Python，并且在阅读此教程前你已经进行过一些 Django 的学习，但那时候安装的 Django 还是 1.8 版本。我们教程使用的是最新版的 Django 1.10.6 版本，你可能不愿意删除掉旧版的 Django 1.8，因为那可能导致你以前的项目无法运行。既想让原本项目在 Django 1.8 环境下运行，又想再安装 Django 1.10.6 来开启本教程的项目，怎么办呢？使用 Virtualenv 就能够完美解决这个问题。
@@ -38,8 +41,9 @@ C:\Users\qianqi>virtualenv D:\qianq\blogproject_env
 C:\Users\qianqi>D:\qianq\blogproject_env\Scripts\activate
 (blogproject_env) C:\Users\qianqi>
 ~~~
-&nbsp; 
-##三、安装Django
+
+三、安装Django
+
 Django 的官方文档对 如何安装 Django 给出了详细且明确的指导，不过我们目前用不上这些，只需使用 pip 命令就可以解决问题。
 
 (blogproject_env) C:\WINDOWS\system32>pip install django==1.10.6
