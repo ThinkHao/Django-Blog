@@ -45,8 +45,9 @@ C:\Users\qianqi>D:\qianq\blogproject_env\Scripts\activate
 ## 三、安装Django
 
 Django 的官方文档对 如何安装 Django 给出了详细且明确的指导，不过我们目前用不上这些，只需使用 pip 命令就可以解决问题。
-
-(blogproject_env) C:\WINDOWS\system32>pip install django==1.10.6
+~~~
+(blogproject_env) C:\Users\qianqi>pip install django==1.10.6
+~~~
 我们用 django==1.10.6 来安装指定的 Django 版本以保证和教程中的一致。如果直接 pip install django 的话有可能安装最新的 Django 发行版本，而不是 Django 1.10.6。
 
 注意命名提示符前的 (blogproject_env) 以确保你始终处在虚拟环境中，如果不小心退出了虚拟环境，先按上面的步骤重新进入再安装 Django。
